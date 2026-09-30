@@ -22,12 +22,6 @@ class _VoltexAppState extends State<VoltexApp> {
         style: TextStyle(fontSize: 22, fontWeight: FontWeight.w600, color: CupertinoColors.white),
       ),
     ),
-    Center(
-      child: Text(
-        'Notifications',
-        style: TextStyle(fontSize: 22, fontWeight: FontWeight.w600, color: CupertinoColors.white),
-      ),
-    ),
   ];
 
   @override
@@ -42,7 +36,6 @@ class _VoltexAppState extends State<VoltexApp> {
           tabs: const [
             GlassTab(icon: FaIcon(FontAwesomeIcons.house)),
             GlassTab(icon: FaIcon(FontAwesomeIcons.gasPump)),
-            GlassTab(icon: FaIcon(FontAwesomeIcons.bell)),
           ],
           selectedIndex: selectedIndex,
           onTabSelected: (i) => setState(() => selectedIndex = i),
